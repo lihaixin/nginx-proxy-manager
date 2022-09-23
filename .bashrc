@@ -14,7 +14,7 @@ alias h='cd ~;clear;'
 alias reboot='pkill -s 1;sleep 1;pkill -s 1'
 
 : ${MainINF:=$(ip route | grep "default via" |awk '{ print $5}')}
-: ${MainIP:=$(/sbin/ifconfig $MainINF | grep 'inet' | awk '{ print $2}' | awk -F ":" '{print $2 }' | head -n 1)}
+: ${MainIP:=$(/sbin/ifconfig $MainINF | grep 'inet' | awk '{ print $2}')}
 IP=$(curl -s  ip.sb)
 
 . /etc/os-release
