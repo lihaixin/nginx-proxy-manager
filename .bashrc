@@ -32,8 +32,8 @@ fi
 fi
 echo -e "\E[1;36m # Version \E[1;32m${NPM_BUILD_VERSION:-2.0.0-dev} (${NPM_BUILD_COMMIT:-dev}) ${NPM_BUILD_DATE:-0000-00-00}\E[1;36m, OpenResty \E[1;32m${OPENRESTY_VERSION:-unknown}\E[1;36m, ${ID:-debian} \E[1;32m${VERSION:-unknown}\E[1;36m, Certbot \E[1;32m$(certbot --version)\E[0m"
 echo -e -n '\E[1;34m'
-echo " # Nginx(外网IP)管理地址: https://$IP:81   默认管理员用户：Email: admin@example.com Password: changeme "
-echo " # Nginx(内网IP)管理地址: https://$MainIP:81   默认管理员用户：Email: admin@example.com Password: changeme "
+echo " # Nginx(外网IP)管理地址: http://$IP:81   默认管理员用户：Email: admin@example.com Password: changeme "
+echo " # Nginx(内网IP)管理地址: http://$MainIP:81   默认管理员用户：Email: admin@example.com Password: changeme "
 # cat /built-for-arch
 echo " # ---------------------------------------------------------------------------------------------------------------- #"
 if [ -f "/etc/member" ]; then
