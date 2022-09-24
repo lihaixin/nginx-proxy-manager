@@ -4,7 +4,7 @@ docker buildx build --platform linux/arm64,linux/amd64 -t lihaixin/nginx-proxy-m
 ```
 
 # nginx-proxy-manager
-Nginx反向代理，免费的 SSL，而无需对 Nginx 或 Letsencrypt 有太多了解
+Nginx反向代理，免费的 SSL，而无需对 Nginx 或 Letsencrypt 有太多了解,就能直观配置好反向代理！
 
 ## 终端界面
 ```
