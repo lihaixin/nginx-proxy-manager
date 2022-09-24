@@ -35,6 +35,7 @@ echo -e -n '\E[1;34m'
 echo " # Nginx(外网IP)管理地址: http://$IP:81   默认管理员用户：Email: admin@example.com Password: changeme "
 echo " # Nginx(内网IP)管理地址: http://$MainIP:81   默认管理员用户：Email: admin@example.com Password: changeme "
 # cat /built-for-arch
+echo " # 更多信息访问网页查看： https://hub.docker.com/r/lihaixin/nginx-proxy-manager
 echo " # ---------------------------------------------------------------------------------------------------------------- #"
 if [ -f "/etc/member" ]; then
 QQ=`cat /etc/envfile | grep QQ | awk -F "=" '{ print $2}'`
