@@ -44,8 +44,8 @@ Nginx反向代理，免费的 SSL，而无需对 Nginx 或 Letsencrypt 有太多
 ```
 docker run -id \
     --restart=always \
-    --name alist \
-    --hostname alist \
+    --name npm \
+    --hostname npm \
     --network=host \
     - v /root/data:/data \
     - v /root/letsencrypt:/etc/letsencrypt \
@@ -55,8 +55,10 @@ docker run -id \
 ```
 version: '3'
 services:
-  app:
+  npm:
     image: 'lihaixin/nginx-proxy-manager'
+    container_name: npm
+    hostname: npm
     restart: always
     network_mode: "host"
 #    ports:
