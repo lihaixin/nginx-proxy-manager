@@ -1,12 +1,12 @@
 ## 构建
 ```
-docker buildx build --platform linux/arm64,linux/amd64 -t lihaixin/nginx-proxy-manager -t lihaixin/nginx-proxy-manager:2.9.18 .  --push
+docker buildx build --platform linux/arm64,linux/amd64 -t lihaixin/npm -t lihaixin/npm:2.9.18 .  --push
 ```
 
 # [nginx-proxy-manager](https://github.com/NginxProxyManager/nginx-proxy-manager)
-Nginx反向代理，免费的 SSL，而无需对 Nginx 或 Letsencrypt 有太多了解,就能直观配置好反向代理！
+nginx-proxy-manager (npm) Nginx反向代理，免费的 SSL，而无需对 Nginx 或 Letsencrypt 有太多了解,就能直观配置好反向代理！
 
-## 终端界面
+## 终端界面nginx-proxy-manager
 ```
                               __          __         _                                   
                                \ \        / /        | |                                  
@@ -49,14 +49,14 @@ docker run -id \
     --network=host \
     - v /root/data:/data \
     - v /root/letsencrypt:/etc/letsencrypt \
-    lihaixin/nginx-proxy-manager
+    lihaixin/npm
 ```
 ### docker-compose.yml
 ```
 version: '3'
 services:
   npm:
-    image: 'lihaixin/nginx-proxy-manager'
+    image: 'lihaixin/npm'
     container_name: npm
     hostname: npm
     restart: always
