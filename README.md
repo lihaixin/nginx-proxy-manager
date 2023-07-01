@@ -47,8 +47,8 @@ docker run -id \
     --name npm \
     --hostname npm \
     --network=host \
-    - v /root/data:/data \
-    - v /root/letsencrypt:/etc/letsencrypt \
+    -v /root/data:/data \
+    -v /root/letsencrypt:/etc/letsencrypt \
     lihaixin/npm
 ```
 ### docker-compose.yml
